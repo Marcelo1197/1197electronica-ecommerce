@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1197 Electrónica</title>
+  <!-- CSS Bootstrap only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!--CSS Local -->
+  <link rel="stylesheet" href="css/carrito.css">
+
+    <!-- Meta tags principales -->
+    <meta name="description" content="Ecommerce de productos electronicos">
+    <meta name="keywords" content="ecommerce, tienda, electronica, hardware">
+    <meta name="autor" content="Marcelo Sanchez">
+    <meta name="copyright" content="Marcelo Sanchez"> <!-- alias Marcelo1197 -->
+
+    <!-- Meta robots -->
+    <meta name="robots" content="index nofollow">
+    
+    <!-- Fav icon -->
+    <link rel="icon" href="images/icono.svg" type="image/png">
+
+    <!-- Open Graph -->
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ecommerce de productos de electronica">
+    <meta property="og:description" content="Tienda de productos electrónicos">
+    <meta property="og:image" content="https://i.imgur.com/RxLcmej.jpg"> 
+    <meta property="og:url" content="....."> <!-- MODIFICAR -->
+    <meta property="og:site_name" content="1197 Electronica">
+
+    <!-- Twitter Cards -->
+
+    <meta name="twitter:title" content="1197 Electronica">
+    <meta name="twitter:description" content="Pagina ecommerce de productos de electronica">
+    <meta name="twitter:image" content="https://i.imgur.com/JdFFlng.jpg"> 
+    <meta name="twitter:site" content=".....">  <!-- MODIFICAR -->
+    <meta name="twitter:creator" content="@ChelooSanchez">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Imagen de un teclado y un carrito de compras">
+</head>
+<body>
+  <header>
+    <div class="header__logo">
+      <a href="index.html"><img src="./images/logo.png" alt=""></a>
+      <h1>1197 Electrónica</h1>
+    </div>
+    <div class="header__carrito">
+      <span class="carrito__contador"></span>
+      <img src="images/carrito.png" alt="" srcset="">
+    </div>
+  </header>
+
+  <section class="carrito">
+    <div class="container carrito__contenedorPrincipal">
+      <ul class="list-group list-group-flush carrito__lista">
+      <!-- Modelo de <li></li> agregado desde localStorage
+        <li class="list-group-item carrito__producto" data-precio="${productoAgregado.price}">
+          <img src="" class="carrito__imgProducto" alt="imagen del producto">
+          <h3 class="carrito__tituloProducto"> TITULO DEL PRODUCTO</h3>
+          <span>Precio del producto </span>
+        </li>
+        -->
+      </ul>
+      <div class="carrito__total">
+      </div>
+      <div class="carrito__contenedorBtn">
+        <button class="btn btn-primary carrito__btnVaciar">VACIAR</button>
+        <button class="btn btn-primary carrito__btnComprar">COMPRAR</button>
+      </div>
+    </div>
+    <div class="carritoVacio">
+      <div class="carritoVacio__contenedorImg">
+        <img class="carritoVacio__img" src="images/carritoVacio.PNG" alt="">
+      </div>
+      <div class="carritoVacio__info">
+        <h3>AÚN NO HAY PRODUCTOS EN EL CARRITO</h3>
+        <p>Seguí eliguiendo los mejores productos desde aquí:</p>
+        <a class="carritoVacio__seguirNavegando" href="index.html">SEGUIR NAVEGANDO</a>
+      </div>
+    </div>    
+  </section>
+
+  <footer>
+    <i>Desarrolado por <b>Marcelo Sanchez</b> - SummerHack DevRock</i>
+  </footer> 
+
+  <script src="carrito.js"></script>
+</body>
+</html>
+

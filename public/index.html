@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    Hola Jony, te dejo mi página, el diseño está muy pobre pero traté de enfocarme en la funcionalidad y dejé el diseño
+    para el final, fue el reto que más me gusto hacer, estoy manija por ver que se viene con React, localstorage me salvó las papas.
+    Abrazo grande y gracias por alto summerhack!
+  -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1197 Electrónica</title>
+  <!-- CSS Bootstrap only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- CSS exclusivo del pre loader-->
+  <link rel="stylesheet" href="./css/preloader.css">
+  <!-- CSS general -->
+  <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Meta tags principales -->
+    <meta name="description" content="Ecommerce de productos electronicos">
+    <meta name="keywords" content="ecommerce, tienda, electronica, hardware">
+    <meta name="autor" content="Marcelo Sanchez">
+    <meta name="copyright" content="Marcelo Sanchez"> <!-- alias Marcelo1197 -->
+
+    <!-- Meta robots -->
+    <meta name="robots" content="index nofollow">
+    
+    <!-- Fav icon -->
+    <link rel="icon" href="images/icono.svg" type="image/png">
+
+    <!-- Open Graph -->
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ecommerce de productos de electronica">
+    <meta property="og:description" content="Tienda de productos electrónicos">
+    <meta property="og:image" content="https://i.imgur.com/RxLcmej.jpg"> 
+    <meta property="og:url" content="https://electronica-2ff0e.web.app/"> 
+    <meta property="og:site_name" content="1197 Electronica">
+
+    <!-- Twitter Cards -->
+
+    <meta name="twitter:title" content="1197 Electronica">
+    <meta name="twitter:description" content="Pagina ecommerce de productos de electronica">
+    <meta name="twitter:image" content="https://i.imgur.com/JdFFlng.jpg"> 
+    <meta name="twitter:site" content="https://electronica-2ff0e.web.app/">  
+    <meta name="twitter:creator" content="@ChelooSanchez">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Imagen de un teclado y un carrito de compras">
+</head>
+<body>
+  <header>
+    <div class="header__logo">
+      <a href="index.html"><img src="./images/logo.png" alt=""></a>
+      <h1>1197 Electrónica</h1>
+    </div>
+    <div class="header__carrito">
+      <span class="carrito__contador"></span>
+      <a href="carrito.html"><img src="images/carrito.png" alt="" class="carrito__img"></a>
+    </div>
+
+  </header>
+
+  <section class="loading">
+    <div class="loader">
+      <span>Loading...</span>
+    </div>
+  </section>
+
+  <section class="home">
+    <div class="splash">
+      <div class="container splash__cardProducto">
+        <div class="splash__imgProducto">
+          imagen del producto
+        </div>
+        <div class="splash__infoProducto">
+          <h3 class="splash__tituloProducto">NOMBRE DEL PRODUCTO</h3>
+          <p class="splash__descripcionProducto">DESCRIPCION DEL PRODUCTO</p>
+          <div class="splash__contenedorPrecioBoton">
+            <strong class="splash__precioProducto"><b>PRECIO</b></strong>
+            <button class="btn btn-primary splash__btnProducto">COMPRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="categorias">
+      <div class="container">
+        <div class="row categorias__cardContenedor">
+          <!-- Productos cargados con el script main.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modalProducto">
+        <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDetallesProductos">
+      Launch static backdrop modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalDetallesProductos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modalProducto__contenedorCard">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+      <i>Desarrolado por <b>Marcelo Sanchez</b> - SummerHack DevRock</i>
+  </footer> 
+  
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
