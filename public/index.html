@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 
-    Hola Jony, te dejo mi página, el diseño está muy pobre pero traté de enfocarme en la funcionalidad y dejé el diseño
-    para el final, fue el reto que más me gusto hacer, estoy manija por ver que se viene con React, localstorage me salvó las papas.
-    Abrazo grande y gracias por alto summerhack!
-  -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>1197 Electrónica</title>
-  <!-- CSS Bootstrap only -->
+  <!-- CSS Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- CSS exclusivo del pre loader-->
   <link rel="stylesheet" href="./css/preloader.css">
@@ -25,12 +20,11 @@
 
     <!-- Meta robots -->
     <meta name="robots" content="index nofollow">
-    
+
     <!-- Fav icon -->
     <link rel="icon" href="images/icono.svg" type="image/png">
 
-    <!-- Open Graph -->
-    
+    <!-- Open Graph -->  
     <meta property="og:type" content="article">
     <meta property="og:title" content="Ecommerce de productos de electronica">
     <meta property="og:description" content="Tienda de productos electrónicos">
@@ -39,7 +33,6 @@
     <meta property="og:site_name" content="1197 Electronica">
 
     <!-- Twitter Cards -->
-
     <meta name="twitter:title" content="1197 Electronica">
     <meta name="twitter:description" content="Pagina ecommerce de productos de electronica">
     <meta name="twitter:image" content="https://i.imgur.com/JdFFlng.jpg"> 
@@ -71,13 +64,13 @@
     <div class="splash">
       <div class="container splash__cardProducto">
         <div class="splash__imgProducto">
-          imagen del producto
+          <!-- Imagen del producto insertada desde el script main.js -->
         </div>
         <div class="splash__infoProducto">
-          <h3 class="splash__tituloProducto">NOMBRE DEL PRODUCTO</h3>
-          <p class="splash__descripcionProducto">DESCRIPCION DEL PRODUCTO</p>
+          <h3 class="splash__tituloProducto"> <!-- Nombre del producto agregada main.js --></h3>
+          <p class="splash__descripcionProducto"> <!-- Descripcion agregada main.js --></p>
           <div class="splash__contenedorPrecioBoton">
-            <strong class="splash__precioProducto"><b>PRECIO</b></strong>
+            <strong class="splash__precioProducto"><b> <!-- Precio del producto agregado desde main.js --></b></strong>
             <button class="btn btn-primary splash__btnProducto">COMPRAR</button>
           </div>
         </div>
@@ -94,11 +87,6 @@
   </section>
 
   <section class="modalProducto">
-        <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDetallesProductos">
-      Launch static backdrop modal
-    </button> -->
-
     <!-- Modal -->
     <div class="modal fade" id="modalDetallesProductos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">

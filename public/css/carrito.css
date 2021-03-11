@@ -82,7 +82,6 @@ footer i {
 
 header {
   /* display: flex aplicado desde main.js */
-  display: flex; /* QUITAR. SOLO PARA TRABAJAR TEMPORALMENTE SOBRE HEADER */
   justify-content: space-between;
   align-items: center;
   height: 100px;
